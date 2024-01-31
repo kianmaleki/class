@@ -11,9 +11,10 @@
 
 .text-flicker-in-glow-text {
     text-align: center;
-    font-weight: bolder;
+    font-weight: 900;
     margin: 2rem;
-    font-size: calc(2vw + 20px);
+    font-size: calc(2vw + 30px);
+    color: #00A693;
 }
 
 
