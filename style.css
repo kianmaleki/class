@@ -5,18 +5,6 @@
     font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 0.25rem;
-    box-shadow: 0 0 2.5px 0.5px lightgray;
-}
-
-header img {
-    width: 100px;
-    margin-top: 1rem;
-    margin: 1rem;
-}
-
 .text-flicker-in-glow {
     animation: text-flicker-in-glow 5s linear both;
 }
