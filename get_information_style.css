@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+body {
+    background-color: #262626;
+}
+
+.roll-in-blurred-left {
+    animation: roll-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@keyframes roll-in-blurred-left {
+    0% {
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+.nav {
+    width: 100%;
+    background-color: #666;
+    text-align: center;
+    font-weight: 900;
+    font-size: calc(1.5rem + 0.75vw);
+    color: white;
+    padding: 1rem;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 1rem;
+}
+
+.continer {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin: 2rem;
+    color: white;
+    border: none;
+}
+
+.continer .continer-title h2 {
+    width: 100%;
+    margin: 1rem;
+    font-size: calc(00.75rem + 0.75vw);
+}
+
+.continer .button {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin: 1rem;
+}
+
+.footer {
+    background-color: #666;
+    max-width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.footer .footer-body {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 20rem;
+}
+
+.footer .footer-section {
+    max-width: 80%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .footer-title {
+    max-width: 100%;
+    margin: 0.25rem;
+    display: block;
+    font-size: calc(0.5rem + 0.75vw);
+    padding: 0.5rem;
+}
+
+.footer .footer-text ul {
+    list-style-type: none;
+}
+
+.footer .footer-text li {
+    padding: 1rem;
+    font-size: calc(0.75rem + 0.75vw);
+}
+
+.footer .footer-text a {
+    text-decoration: none;
+    margin: 1rem;
+    font-size: calc(0.5rem + 0.75vw);
+    color: white;
+}
+
+.footer .footer-logo img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.footer .footer-logo {
+    width: 250px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    text-align: center;
+}
