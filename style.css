@@ -6,7 +6,7 @@
 }
 
 .text-flicker-in-glow {
-    animation: text-flicker-in-glow 5s linear both;
+    animation: text-flicker-in-glow 2s linear both;
 }
 
 .text-flicker-in-glow-text {
