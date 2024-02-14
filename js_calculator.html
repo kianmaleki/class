@@ -13,23 +13,24 @@
 </head>
 
 <body class="roll-in-blurred-left">
-
     <nav class="nav">
         <h1>به صفحه ماشین حساب خوش امدید</h1>
     </nav>
-
     <div class="continer ">
         <input id="number1" type="number" placeholder="عدد مورد نظر را وارد کن">
         <h1 id="logic">+ , * , /</h1>
         <input id="number2" type="number" placeholder="عدد مورد نظر را وارد کن">
         <input type="button" value="جمع"
             onclick="document.getElementById('logic').innerHTML = ('+');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) + parseInt(n2))">
-        <input type="button" value="ضرب"
-            onclick="document.getElementById('logic').innerHTML = ('*');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) * parseInt(n2))">
+        <input type="button" value="تفریق"
+            onclick="document.getElementById('logic').innerHTML = ('-');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) - parseInt(n2))">
         <input type="button" value="تقسیم"
             onclick="document.getElementById('logic').innerHTML = ('/');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) / parseInt(n2))">
+        <input type="button" value="ضرب"
+            onclick="document.getElementById('logic').innerHTML = ('*');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) * parseInt(n2))">
+        <input type="button" value="توان"
+            onclick="document.getElementById('logic').innerHTML = ('**');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) ** parseInt(n2))">
     </div>
-
     <footer class="footer">
         <div class="footer-section">
             <div class="footer-body">
@@ -45,7 +46,6 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-section">
             <div class="footer-body">
                 <div class="footer-title">
@@ -59,13 +59,10 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-section">
             <div class="footer-logo"><img src="images/logo.svg" alt=""></div>
         </div>
-
     </footer>
-
 </body>
 
 </html>
