@@ -4,40 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="js_calculator_style.css">
+    <link rel="stylesheet" href="get_information_style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <title>get information</title>
-    <script src="index.js"></script>
 </head>
 
 <body class="roll-in-blurred-left">
-
     <nav class="nav">
-        <h1>خوش امدید</h1>
+        <div class="nav-title">
+            <h1>خوش امدید</h1>
+        </div>
+        <div class="nav-information">
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                </li>
+                <li id="fname">اسم شما</li>
+                <li id="lname">فامیل شما</li>
+                <li id="age">سن شما</li>
+            </ul>
+        </div>
     </nav>
-
     <div class="continer">
         <div class="continer-title">
             <h2>انجام تغیرات در اطلاعات</h2>
         </div>
         <div class="button">
-            <button type="button">
-                تغیر نام
-            </button>
-            <button type="button">
-                تغیر پروفایل
-            </button>
-            <button type="button">
-                تغیر سن
-            </button>
-            <button type="button">
-                تغیر
-            </button>
+            <input type="button" value="تغیر نام"
+                onclick="fname = prompt('نام جدید را وارد کنید');document.getElementById('fname').innerHTML = fname">
+            </input>
+            <input
+                onclick="lname = prompt('فامیل جدید را وارد کنید');document.getElementById('lname').innerHTML = lname"
+                type="button" value="تغیر فامیل">
+            </input>
+            <input onclick="age = prompt('سن جدید را وارد کنید');document.getElementById('age').innerHTML = age"
+                type="button" value="تغیر سن">
+            </input>
         </div>
     </div>
-
     <footer class="footer">
         <div class="footer-section">
             <div class="footer-body">
@@ -53,7 +61,6 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-section">
             <div class="footer-body">
                 <div class="footer-title">
@@ -67,13 +74,19 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-section">
-            <div class="footer-logo"><img src="images/logo.svg" alt=""></div>
+            <div class="logo"><img src="images/logo.svg" alt=""></div>
         </div>
-
     </footer>
 
+    <script>
+        fname = prompt("نام خود را وارد کنید");
+        lname = prompt("فامیل خود را وارد کنید");
+        age = prompt("سن خود را وارد کنید");
+        document.getElementById("fname").innerHTML = fname;
+        document.getElementById("lname").innerHTML = lname;
+        document.getElementById("age").innerHTML = age;
+    </script>
 </body>
 
 </html>
