@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js-Identify-information-style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>get information</title>
+</head>
+
+<body class="roll-in-blurred-left">
+    <nav class="nav">
+        <div class="nav-title">
+            <h1 id="text-heder">خوش امدید</h1>
+        </div>
+        <div class="nav-information">
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="continer">
+        <div class="continer-title">
+            <h2>گرفتن و تشخیص اطلاعات</h2>
+        </div>
+        <div class="button">
+            <input id="fname" type="text" placeholder="نام">
+            <input id="lname" type="text" placeholder="فامیل">
+            <select name="gender" id="gender">
+                <option value="men">مرد</option>
+                <option value="women">زن</option>
+            </select>
+            <input class="btn" type="button" value="ثبت" onclick="
+            gender = document.getElementById('gender').value;
+            fname = document.getElementById('fname').value;
+            lname = document.getElementById('lname').value;
+            //تشخیص جنسیت
+            if(gender == 'men'){
+                textheder = ('خوش امیدید اقای' + ' ' + fname + ' ' + lname)
+                document.getElementById('text-heder').innerHTML = textheder;
+                alert('سلام اقای' + ' ' + fname + ' ' + lname);
+            }
+            else if(gender == 'women'){
+                textheder = ('خوش امیدید خانوم' + ' ' + fname + ' ' + lname);
+                document.getElementById('text-heder').innerHTML = textheder;
+                alert('سلام خانوم' + ' ' + fname + ' ' + lname);
+            }
+            ">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="footer-body">
+                <div class="footer-title">
+                    <h2>ارتباط با من</h2>
+                </div>
+                <div class="footer-text">
+                    <ul>
+                        <li>تماس : *** **** ***</li>
+                        <li>ایمیل : ***********</li>
+                        <li>ادرس : *************</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="footer-body">
+                <div class="footer-title">
+                    <h2>لینک های مرتبط</h2>
+                </div>
+                <div class="footer-text">
+                    <ul>
+                        <li><a href="http://shahradr.pcshared.com/">وب سایت کلاس</a></li>
+                        <li><a href="index.html">وب سایت من</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="logo"><img src="images/logo.svg" alt=""></div>
+        </div>
+    </footer>
+
+    <script>
+    </script>
+</body>
+
+</html>
