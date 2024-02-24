@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="js_calculator_style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="js_calculator_style.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>js project</title>
     <script src="index.js"></script>
-</head>
+  </head>
 
-<body class="roll-in-blurred-left">
+  <body class="roll-in-blurred-left">
     <nav class="nav">
-        <h1>به صفحه ماشین حساب خوش امدید</h1>
+      <h1>به صفحه ماشین حساب خوش امدید</h1>
     </nav>
-    <div class="continer ">
-        <input id="number1" type="number" placeholder="عدد مورد نظر را وارد کن">
-        <h1 id="logic">+ , * , /</h1>
-        <input id="number2" type="number" placeholder="عدد مورد نظر را وارد کن">
-        <input type="button" value="جمع"
-            onclick="document.getElementById('logic').innerHTML = ('+');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) + parseInt(n2))">
-        <input type="button" value="تفریق"
-            onclick="document.getElementById('logic').innerHTML = ('-');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) - parseInt(n2))">
-        <input type="button" value="تقسیم"
-            onclick="document.getElementById('logic').innerHTML = ('/');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) / parseInt(n2))">
-        <input type="button" value="ضرب"
-            onclick="document.getElementById('logic').innerHTML = ('*');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) * parseInt(n2))">
-        <input type="button" value="توان"
-            onclick="document.getElementById('logic').innerHTML = ('**');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) ** parseInt(n2))">
+    <div class="continer">
+      <input id="number1" type="number" placeholder="عدد مورد نظر را وارد کن" />
+      <h1 id="logic">+ , * , /</h1>
+      <input id="number2" type="number" placeholder="عدد مورد نظر را وارد کن" />
+      <input
+        type="button"
+        value="جمع"
+        onclick="document.getElementById('logic').innerHTML = ('+');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) + parseInt(n2))"
+      />
+      <input
+        type="button"
+        value="تفریق"
+        onclick="document.getElementById('logic').innerHTML = ('-');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) - parseInt(n2))"
+      />
+      <input
+        type="button"
+        value="تقسیم"
+        onclick="document.getElementById('logic').innerHTML = ('/');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) / parseInt(n2))"
+      />
+      <input
+        type="button"
+        value="ضرب"
+        onclick="document.getElementById('logic').innerHTML = ('*');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) * parseInt(n2))"
+      />
+      <input
+        type="button"
+        value="توان"
+        onclick="document.getElementById('logic').innerHTML = ('**');n1 = document.getElementById('number1').value;n2 = document.getElementById('number2').value;alert(parseInt(n1) ** parseInt(n2))"
+      />
     </div>
     <footer class="footer">
-        <div class="footer-section">
-            <div class="footer-body">
-                <div class="footer-title">
-                    <h2>ارتباط با من</h2>
-                </div>
-                <div class="footer-text">
-                    <ul>
-                        <li>تماس : *** **** ***</li>
-                        <li>ایمیل : ***********</li>
-                        <li>ادرس : *************</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="footer-section">
+        <div class="footer-body">
+          <div class="footer-title">
+            <h2>ارتباط با من</h2>
+          </div>
+          <div class="footer-text">
+            <ul>
+              <li>تماس : *** **** ***</li>
+              <li>ایمیل : ***********</li>
+              <li>ادرس : *************</li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-section">
-            <div class="footer-body">
-                <div class="footer-title">
-                    <h2>لینک های مرتبط</h2>
-                </div>
-                <div class="footer-text">
-                    <ul>
-                        <li><a href="http://shahradr.pcshared.com/">وب سایت کلاس</a></li>
-                        <li><a href="index.html">وب سایت من</a></li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-body">
+          <div class="footer-title">
+            <h2>لینک های مرتبط</h2>
+          </div>
+          <div class="footer-text">
+            <ul>
+              <li><a href="http://shahradr.pcshared.com/">وب سایت کلاس</a></li>
+              <li><a href="index.html">وب سایت من</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-section">
-            <div class="footer-logo"><img src="images/logo.svg" alt=""></div>
-        </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-logo"><img src="images/logo.svg" alt="" /></div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

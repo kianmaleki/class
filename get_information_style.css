@@ -10,7 +10,7 @@ body {
 }
 
 .roll-in-blurred-left {
-    animation: roll-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: roll-in-blurred-left 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 @keyframes roll-in-blurred-left {
@@ -102,7 +102,7 @@ body {
     margin: 1rem;
 }
 
-.continer .button input[type=button] {
+.continer .button input[type="button"] {
     padding: 1rem;
     cursor: pointer;
     margin: 1rem;
@@ -114,7 +114,7 @@ body {
     font-size: larger;
 }
 
-.continer .button input[type=button]:hover {
+.continer .button input[type="button"]:hover {
     opacity: 0.75;
     transition: 0.5s;
 }
