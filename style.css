@@ -9,10 +9,6 @@ body {
     background-color: #262626;
 }
 
-.text-flicker-in-glow {
-    animation: text-flicker-in-glow 2s linear both;
-}
-
 .text-flicker-in-glow-text {
     text-align: center;
     font-weight: 900;
@@ -73,7 +69,7 @@ body {
 .continer2 {
     max-width: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: start;
     margin: auto;
@@ -83,12 +79,10 @@ body {
 
 .continer2 .childNumber {
     width: 300px;
-    max-width: 70%;
+    max-width: 80%;
     padding: 1rem;
     height: max-content;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    box-shadow: 0 0 2.5px 1px lightgray;
+    margin: 4rem;
     border-radius: 0.5rem;
 }
 
