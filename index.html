@@ -14,6 +14,21 @@
   <body class="text-flicker-in-glow">
     <h1 class="text-flicker-in-glow text-flicker-in-glow-text">kian maleki</h1>
 
+    <div class="continer2">
+      <div class="childNumber">
+        <h2 id="numberCharshanbahSori"></h2>
+        <h3>تعداد روز های مانده تا چهارشنبه سوری</h3>
+      </div>
+      <div class="childNumber">
+        <h2 id="numberSalTahvil"></h2>
+        <h3>تعداد روز های مانده تا سال تحویل</h3>
+      </div>
+      <div class="childNumber">
+        <h2 id="numberTamomShodanDars"></h2>
+        <h3>تعداد روز های مانده تا پایان درس و مدرسه</h3>
+      </div>
+    </div>
+
     <div class="continer">
       <div class="child">
         <h3>تمرین های js</h3>
@@ -66,7 +81,7 @@
           </tr>
 
           <tr>
-            <td>2</td>
+            <td>3</td>
             <td>5/12/1402</td>
             <td>
               <a href="js-Identify-information.html"
@@ -166,5 +181,42 @@
         <div class="footer-logo"><img src="images/logo.svg" alt="" /></div>
       </div>
     </footer>
+
+    <script>
+      interval_1 = setInterval(intervarCharshanbahSori, 120);
+      x_1 = 0;
+
+      function intervarCharshanbahSori() {
+        document.getElementById("numberCharshanbahSori").innerHTML =
+          x_1 + "  " + "+";
+        x_1 += 1;
+        if (x_1 == 5) {
+          clearInterval(interval_1);
+        }
+      }
+
+      interval_2 = setInterval(intervalSalTahvil, 90);
+      x_2 = 0;
+
+      function intervalSalTahvil() {
+        document.getElementById("numberSalTahvil").innerHTML = x_2 + "  " + "+";
+        x_2 += 1;
+        if (x_2 == 12) {
+          clearInterval(interval_2);
+        }
+      }
+
+      interval_3 = setInterval(intervalTamomShodanDars, 10);
+      x_3 = 0;
+
+      function intervalTamomShodanDars() {
+        document.getElementById("numberTamomShodanDars").innerHTML =
+          x_3 + "  " + "+";
+        x_3 += 1;
+        if (x_3 == 99) {
+          clearInterval(interval_3);
+        }
+      }
+    </script>
   </body>
 </html>
